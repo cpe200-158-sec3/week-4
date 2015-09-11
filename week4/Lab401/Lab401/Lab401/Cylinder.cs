@@ -24,39 +24,28 @@ namespace Lab401
                 }
             }
         }
-        public Cylinder()
+        public Cylinder():base(0,0,1)
         {
-            x = 0;
-            y = 0;
-            radius = 1;
+           
             Height = 1;
         }
-        public Cylinder(double r, double h)
+        public Cylinder(double r, double h):base(0,0,r)
         {
-            x = 0;
-            y = 0;
-            radius = r;
             Height = h;
         }
-        public Cylinder(double x, double y, double r, double h)
+        public Cylinder(double x, double y, double r, double h):base(x,y,r)
         {
-            this.x = x;
-            this.y = y;
-            radius = r;
+           
             Height = h;
         }
-        public Cylinder(Circle c)
+        public Cylinder(Circle c):base(c.x,c.y,c.radius)
         {
-            x = c.x;
-            y = c.y;
-            radius = c.radius;
+            
             Height = 1;
         }
-        public Cylinder(Cylinder cl)
+        public Cylinder(Cylinder cl):base(cl.x, cl.y,cl.radius)
         {
-            x = cl.x;
-            y = cl.y;
-            radius = cl.radius;
+            
             Height = cl.Height;
         }
 

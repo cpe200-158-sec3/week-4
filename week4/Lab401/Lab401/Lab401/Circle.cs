@@ -8,6 +8,7 @@ namespace Lab401
 {
     class Circle : Point
     {
+       
         private double _radius;
         public double radius
         {
@@ -25,28 +26,22 @@ namespace Lab401
             }
         }
 
-        public Circle()
+        public Circle():base(0,0)
         {
-            x = 0;
-            y = 0;
             radius = 1;
         }
-        public Circle(double r)
+        public Circle(double r):base(0,0)
         {
-            x = 0;
-            y = 0;
             radius = r;
         }
-        public Circle(double x, double y, double r)
+        public Circle(double x, double y, double r):base(x,y)
         {
-            this.x = x;
-            this.y = y;
+            
             radius = r;
         }
-        public Circle(Circle c)
+        public Circle(Circle c):base(c.x,c.y)
         {
-            x = c.x;
-            y = c.y;
+            
             radius = c.radius;
         }
         public void setCircle(double x, double y, double r)

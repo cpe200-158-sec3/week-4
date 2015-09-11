@@ -8,15 +8,23 @@ namespace Lab401
 {
     class Point
     {
+        protected double X;
+        protected double Y;
         public double x
         {
-            get;
-            set;
+            get { return X; }
+            set
+            {
+                X = value;
+            }
         }
         public double y
         {
-            get;
-            set;
+            get { return Y; }
+            set
+            {
+                Y = value;
+            }
         }
 
         public Point()
