@@ -73,4 +73,5 @@ namespace Lab401
             return string.Format("[Circle: center({0},{1}), radius={2}, area={3}]", base.X, base.Y, Radius, getArea());
         }
     }
+
 }
