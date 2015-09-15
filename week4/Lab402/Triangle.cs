@@ -2,11 +2,32 @@
 
 namespace Lab4
 {
-	public class Triangle
+	public class Triangle : Shape
 	{
-		public Triangle ()
+        public Triangle ():base("gold"){
+                Width = 1;
+                Height = 1;
+    }
+        public Triangle(string color, double _width, double _height):base(color)
 		{
+            this.Width = _width;
+            this.Height = _height;
 		}
+        public Triangle(Rectangle R) :base(R.Color){
+            Width = R.Width;
+            Height = R.Height;
+        }
+        public override double getArea()
+        {
+            return 0.5 * Width * Height;
+        }
+        public override double getPerimeter()
+        {
+            return Height + Math.Sqrt(Math.Pow(Height, 2) + Math.Pow(Width, 2)) + Width;
+        }
+        public override string ToString() {
+            return string.Format("[Triangle: base={0} height={1}, area={2}, color={3}", Width, Height, getArea(), Color);
+        } 
 	}
 }
 
