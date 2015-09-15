@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace Lab4
+namespace Lab402
 {
+
     public class Triangle : Shape
     {
         private double _Width, _Height;
@@ -53,11 +54,11 @@ namespace Lab4
         }
         public override double getPerimeter()
         {
-            return _Width + Math.Sqrt(Math.Pow(_Width / 2, 2) + Math.Pow(_Height, 2)) * 2;
+            return _Height + Math.Sqrt(Math.Pow(_Height, 2) + Math.Pow(_Width, 2)) + _Width;
         }
         public override string ToString()
         {
-            return string.Format("Triangle: base={0}, height={1}, area={2}, color={3}]", _Width, _Height, getArea(), color);
+            return string.Format("[Triangle: base={0}, height={1}, area={2}, color={3}]", _Width, _Height, getArea(), color);
         }
     }
 }
