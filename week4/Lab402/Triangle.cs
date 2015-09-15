@@ -18,6 +18,7 @@ namespace Lab4
                 { _width = 1.0; }
             }
         }
+
         public double Height
         {
             get { return _height; }
@@ -29,6 +30,7 @@ namespace Lab4
                 { _height = 1.0; }
             }
         }
+
 		public Triangle ():base("gold")
 		{
             _width = 1.0;
