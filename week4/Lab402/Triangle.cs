@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Lab4
-{
+{ 
     class Triangle : Shape
     {
         private double _width = 1;
