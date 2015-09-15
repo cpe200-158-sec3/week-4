@@ -46,8 +46,10 @@ Abstract class
 ## Questions:
 
 1. Are there still any redundant lines of code in your project? where?
+Answer : Yes, constuctor is Width and Height in Rectangle and Triangle class
 2. Modify the project so that you can minimize or solve those redundancy.
 3. What happen if you uncomment line #27-28 in the Program.cs file? Why?
+Answer : Program error because it can't creat object in abstract class
 4. If you uncomment line #30-24 in the Program.cs file, you will get some compile errors.
    Modify the classes and/or the program.cs without touching the "Main" method so that 
    the program will display the result as shown below:
