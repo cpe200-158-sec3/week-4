@@ -54,7 +54,7 @@ namespace Lab4
 
         public override double getPerimeter()
         {
-            return (Width + Height) * 2;
+            return (Width + Height) * 2; 
         }
         public override string ToString()
         {
