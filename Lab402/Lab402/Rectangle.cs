@@ -4,44 +4,6 @@ namespace Lab4
 {
     public class Rectangle : Shape
     {
-        private double width;
-        private double height;
-        public double Width
-        {
-            get
-            {
-                return width;
-            }
-            set
-            {
-                if (value >= 0)
-                {
-                    width = value;
-                }
-                else
-                {
-                    width = 1;
-                }
-            }
-        }
-        public double Height
-        {
-            get
-            {
-                return height;
-            }
-            set
-            {
-                if (value >= 0)
-                {
-                    height = value;
-                }
-                else
-                {
-                    height = 1;
-                }
-            }
-        }
         public Rectangle() : base("gold")
         {
             Width = 1;
