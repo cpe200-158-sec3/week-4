@@ -4,6 +4,7 @@ namespace Lab4
 {
 	public class Triangle : Shape
 	{
+
         private double _Width;
         private double _Height;
 
