@@ -57,7 +57,7 @@ namespace Lab4
         }
         public override string ToString()
         {
-            return string.Format("Triangle: base={0}, height={1}, area={2}, color={3}]", _Width, _Height, getArea(), Color);
+            return string.Format("Triangle: base={0}, height={1}, area={2}, color={3}]", _Width, _Height, getArea(), color);
         }
     }
 }
