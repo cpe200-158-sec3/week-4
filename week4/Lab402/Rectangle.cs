@@ -2,66 +2,31 @@
 
 namespace Lab4
 {
+  
         public class Rectangle : Shape
         {
-            private double width;
-            private double height;
 
-            public double Width
+            public Rectangle()
+                : base("gold")
             {
-                get
-                {
-                    return width;
-                }
-                set
-                {
-                    if (value > 0)
-                    {
-                        width = value;
-                    }
-                    else
-                    {
-                        width = 1;
-                    }
-                }
+                Width = 1;
+                Height = 1;
             }
-
-            public double Height
+            public Rectangle(string color, double width, double height)
+                : base(color)
             {
-                get
-                {
-                    return height;
-                }
-                set
-                {
-                    if (value > 0)
-                    {
-                        height = value;
-                    }
-                    else
-                    {
-                        height = 1;
-                    }
-                }
+                Width = width;
+                Height = height;
             }
-            public Rectangle() : base("gold")
+            public Rectangle(Rectangle r)
+                : base(r.Color)
             {
-                width = 1;
-                height = 1;
-            }
-            public Rectangle(string color, double w, double h): base(color)
-            {
-                 width = w;
-                height = h;
-            }
-            public Rectangle(Rectangle r) : base(r.Color)
-            {
-                width = r.width;
-                height = r.height;
+                Width = r.Width;
+                Height = r.Height;
             }
             public override double getArea()
             {
-                return width * height;
+                return Width * Height;
             }
 
             public override double getPerimeter()
@@ -70,7 +35,7 @@ namespace Lab4
             }
             public override string ToString()
             {
-                return string.Format("[Rectangle: width={0}, height={1}, area={2}, color={3}]", width, height, getArea(), Color);
+                return string.Format("[Rectangle: width={0}, height={1}, area={2}, color={3}]", Width, Height, getArea(), Color);
             }
         }
     }

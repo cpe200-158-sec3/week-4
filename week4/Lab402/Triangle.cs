@@ -2,74 +2,35 @@
 
 namespace Lab4
 {
-	    public class Triangle : Shape
+    public class Triangle : Shape
+    {
+
+        public Triangle() : base("gold")
         {
-            private double _Width;
-            private double _Height;
-
-            public double Width
-            {
-                get
-                {
-                    return _Width;
-                }
-                set
-                {
-                    if (value > 0)
-                    {
-                        _Width = value;
-                    }
-                    else
-                    {
-                        _Width = 1;
-                    }
-                }
-            }
-
-            public double Height
-            {
-                get
-                {
-                    return _Height;
-                }
-                set
-                {
-                    if (value > 0)
-                    {
-                        _Height = value;
-                    }
-                    else
-                    {
-                        _Height = 1;
-                    }
-                }
-            }
-            public Triangle() : base("gold")
-            {
-                _Width = 1;
-                _Height = 1;
-            }
-            public Triangle(string color, double width, double height) : base(color)
-            {
-                _Width = width;
-                _Height = height;
-            }
-            public Triangle(Triangle t) : base(t.Color)
-            {
-                _Width = t._Width;
-                _Height = t._Height;
-            }
-            public override double getArea()
-            {
-                return 0.5 * _Width * _Height;
-            }
-            public override double getPerimeter()
-            {
-                return _Height + Math.Sqrt(Math.Pow(_Height, 2) + Math.Pow(_Width, 2)) + _Width;
-            }
-            public override string ToString()
-            {
-                return string.Format("[Triangle: base=4, height=5, area=10, color={3}]", _Width, _Height, getArea(), Color);
-            }
+            Width = 1;
+            Height = 1;
+        }
+        public Triangle(string color, double width, double height) : base(color)
+        {
+            Width = width;
+            Height = height;
+        }
+        public Triangle(Triangle t) : base(t.Color)
+        {
+            Width = t.Width;
+            Height = t.Height;
+        }
+        public override double getArea()
+        {
+            return 0.5 * Width * Height;
+        }
+        public override double getPerimeter()
+        {
+            return Height + Math.Sqrt(Math.Pow(Height, 2) + Math.Pow(Width, 2)) + Width;
+        }
+        public override string ToString()
+        {
+            return string.Format("[Rectangle: base={0}, height={1}, area={2}, color={3}]", Width, Height, getArea(), Color);
         }
     }
+}
