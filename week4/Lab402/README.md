@@ -1,5 +1,5 @@
 ﻿# Lab402: Shape abstract class, Retangle and Triangle classes
-
+Name Patsamon Boonchai 570611023 
 # 1. Shape Class:
 Abstract class
 
