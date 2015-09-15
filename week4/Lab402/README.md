@@ -54,7 +54,7 @@ Abstract class
    Modify the classes and/or the program.cs without touching the "Main" method so that 
    the program will display the result as shown below:
 
-## Expected Output:
+## Expected Output: 
 
 [Rectangle: width=4, height=5, area=20, color="red"]
 [Triangle: base=4, height=5, area=10, color="blue"]
