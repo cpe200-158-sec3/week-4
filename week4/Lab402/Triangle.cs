@@ -2,8 +2,8 @@
 
 namespace Lab4
 {
-	public class Triangle : Shape
-	{
+    public class Triangle : Shape
+    {
 
         private double _Width;
         private double _Height;
@@ -45,17 +45,20 @@ namespace Lab4
                 }
             }
         }
-        public Triangle() : base("gold")
-		{
+        public Triangle()
+            : base("gold")
+        {
             _Width = 1;
             _Height = 1;
-		}
-         public Triangle(string color,double width,double height) : base(color)
+        }
+        public Triangle(string color, double width, double height)
+            : base(color)
         {
             _Width = width;
             _Height = height;
         }
-         public Triangle(Triangle t) : base(t.Color)
+        public Triangle(Triangle t)
+            : base(t.Color)
         {
             _Width = t._Width;
             _Height = t._Height;
@@ -66,12 +69,11 @@ namespace Lab4
         }
         public override double getPerimeter()
         {
-            return _Height + Math.Sqrt(Math.Pow(_Height,2) + Math.Pow(_Width,2)) + _Width;
+            return _Height + Math.Sqrt(Math.Pow(_Height, 2) + Math.Pow(_Width, 2)) + _Width;
         }
         public override string ToString()
         {
             return string.Format("[Triangle: base=4, height=5, area=10, color={3}", _Width, _Height, getArea(), Color);
         }
-	}
+    }
 }
-
