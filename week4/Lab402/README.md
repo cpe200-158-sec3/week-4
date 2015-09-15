@@ -46,21 +46,24 @@ Abstract class
 ## Questions:
 
 1. Are there still any redundant lines of code in your project? where?
-2. Modify the project so that you can minimize or solve those redundancy.
-3. What happen if you uncomment line #27-28 in the Program.cs file? Why?
+	- ans yes, on line8,26 in Rectangle and Triangle.  
+2. Modify the project so that you can minimize or solve those redundancy. 
+3. What happen if you uncomment line #27-28 in the Program.cs file? Why? 
+	- error because can't create object. 
 4. If you uncomment line #30-24 in the Program.cs file, you will get some compile errors.
    Modify the classes and/or the program.cs without touching the "Main" method so that 
    the program will display the result as shown below:
 
 ## Expected Output:
 
-[Rectangle: width=4, height=5, area=20, color="red"]
-[Triangle: base=4, height=5, area=10, color="blue"]
-[Rectangle: width=1, height=1, area=1, color="gold"]
-[Rectangle: width=4, height=5, area=20, color="red"]
-Perimeter s1: 18
-Perimeter s1: 15.4031242374328
-Perimeter s1: 4
-Perimeter s1: 32
-Perimeter s1: 12
+[Rectangle: width=4, height=5, area=20, color="red"] 
+[Triangle: base=4, height=5, area=10, color="blue"] 
+[Rectangle: width=1, height=1, area=1, color="gold"] 
+[Rectangle: width=4, height=5, area=20, color="red"] 
+Perimeter s1: 18 
+Perimeter s1: 15.4031242374328 
+Perimeter s1: 4 
+Perimeter s1: 32 
+Perimeter s1: 12 
+
 
