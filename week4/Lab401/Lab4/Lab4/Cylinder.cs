@@ -1,12 +1,15 @@
 ﻿using System;
 
 namespace Lab4
-{
+{   
 	public class Cylinder : Circle
 	{
         private double _height = 1.0;
-        public double Height { get; set; }
-       
+        public double Height
+        {
+            get { return _height; }
+            set { _height = value; }
+        }
         public Cylinder()
         {
             Center = new Point();
@@ -23,13 +26,13 @@ namespace Lab4
         {
             Center = new Point(x,y);
             Radius = rad;
-            _height = Height;
+            _height = height;
         }
 
         public Cylinder(Circle cir)
         {
             Center = new Point(cir.Center);
-            Raduis = cir.Radius;
+            Radius = cir.Radius;
         }
 
         public Cylinder(Cylinder a)
@@ -51,7 +54,7 @@ namespace Lab4
 
         override public string ToString()
         {
-            return "[Cylinder: center(" + Center.X + ", " + Center.Y + "), radius=" + Radius + ", height=" + _height + ", surface=" + getSurface() + ", volume=" + getVolume() + "]";
+            return "[Cylinder: center(" + Center.X + ", " + Center.Y + "), radius=" + Radius + ", height=" + Height + ", surface=" + getSurface() + ", volume=" + getVolume() + "]";
         }
             }
 }
