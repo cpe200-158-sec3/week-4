@@ -4,9 +4,11 @@ namespace Lab4
 {
 	public abstract class Shape
 	{
-		public Shape ()
-		{
-		}
-	}
+        protected string color;
+        public abstract string Color { get; }
+        public abstract double getArea();
+        public abstract double getPerimeter();
+
+    }
 }
 
